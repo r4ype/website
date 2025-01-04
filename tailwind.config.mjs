@@ -5,10 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        "nebula-text": "#cdd6f4",
+        "nebula-accent": "#cba6f7",
+        "nebula-blue": "#89b4fa",
         "mocha-rosewater": "#f5e0dc",
         "mocha-flamingo": "#f2cdcd",
         "mocha-pink": "#f5c2e7",
-        "mocha-mauve": "#cba6f7",
         "mocha-red": "#f38ba8",
         "mocha-maroon": "#eba0ac",
         "mocha-peach": "#fab387",
@@ -17,9 +19,7 @@ export default {
         "mocha-teal": "#94e2d5",
         "mocha-sky": "#89dceb",
         "mocha-sapphire": "#74c7ec",
-        "mocha-blue": "#89b4fa",
         "mocha-lavender": "#b4befe",
-        "mocha-text": "#cdd6f4",
         "mocha-subtext1": "#bac2de",
         "mocha-subtext0": "#a6adc8",
         "mocha-overlay2": "#9399b2",
