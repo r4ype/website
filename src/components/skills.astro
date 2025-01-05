@@ -1,0 +1,113 @@
+<div class="flex flex-col mt-20 gap-4">
+  <div class="flex">
+    <div class="line-between flex flex-col">
+      <span class="timemark">2002</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="flex flex-col">
+      <h1>Javascript</h1>
+
+      <a href="test.com" class="card">
+        <h2>tic tac toe | some more fancy text here</h2>
+        <p>
+          some place holder text Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Vitae est recusandae ipsam fugiat, nemo velit id
+          iusto, quam fuga possimus explicabo illum corrupti deleniti iste rerum
+          nulla exercitationem placeat. Officia.
+        </p>
+      </a>
+      <a href="test.com" class="card">
+        <h2>1024 puzzle game | some more text here</h2>
+        <p>
+          some another placeholder text Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Molestias, aliquam natus doloribus dolor vel velit?
+          Neque animi fugiat labore, recusandae enim voluptatem consectetur ex
+          nisi nesciunt maiores quaerat obcaecati asperiores.
+        </p>
+      </a>
+    </div>
+  </div>
+
+  <div class="flex mt-10">
+    <div class="line-between flex flex-col">
+      <span class="timemark">2002</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="flex flex-col">
+      <h1>Css</h1>
+
+      <a href="test.com" class="card">
+        <h2>the nebula pellete | the perfect colors</h2>
+        <p>some place holder text</p>
+      </a>
+      <a href="test.com" class="card">
+        <h2>table design | design web table componet</h2>
+        <p>some another placeholder text</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="flex mt-10">
+    <div class="line-between flex flex-col">
+      <span class="timemark">2002</span>
+      <span class="line"></span>
+    </div>
+    <div class="flex flex-col">
+      <h1>React</h1>
+
+      <a href="test.com" class="card">
+        <h2>tic tac toe</h2>
+        <p>some place holder text</p>
+      </a>
+      <a href="test.com" class="card">
+        <h2>pizza delivery</h2>
+        <p>some another placeholder text</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--nebula-text);
+  }
+  h2 {
+    color: var(--nebula-text);
+  }
+  p {
+    color: color-mix(in srgb, var(--nebula-text), transparent 50%);
+  }
+  .line-between {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition:
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card:hover {
+    background-color: color-mix(in srgb, var(--nebula-text), transparent 90%);
+    transform: translate(5px, -5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  .line-between .line {
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: color-mix(in srgb, var(--nebula-text), transparent 70%);
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  .timemark {
+    font-size: 0.8rem;
+    color: color-mix(in srgb, var(--nebula-text), transparent 70%);
+  }
+</style>

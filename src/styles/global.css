@@ -23,6 +23,8 @@ body {
   background-color: var(--nebula-base);
   color: color-mix(in srgb, var(--nebula-text), transparent 10%);
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 ::selection {
@@ -61,6 +63,9 @@ p {
   position: relative;
   letter-spacing: 5%;
 }
+.nav-member:hover {
+  color: var(--nebula-text);
+}
 
 .nav-member::after {
   content: "";
@@ -77,24 +82,21 @@ p {
   width: 40px;
 }
 
-.nav-section:target {
-  color: #fff;
-}
-.nav-section:focus {
-  outline: none;
-}
-
-.icon {
-  width: 25px;
-  transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
-}
-.icon:hover {
-  transform: scale(1.5);
-  filter: brightness(1.2);
-}
-
-.highlight {
-  background-color: var(--nebula-highlight);
-  color: var(--nebula-text);
-  font-weight: 600;
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
